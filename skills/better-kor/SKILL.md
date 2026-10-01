@@ -424,7 +424,6 @@ gh pr list --repo <owner/repo> --state all --limit 30 --json title --jq '.[].tit
 
 # 참고 자료 — 판단이 안 서면 룰북을 본다
 
-위 표의 임계값은 `humanize-korean`이 사람 글 코퍼스와 대조해 측정한 값에서 가져왔다.
 **표에 없는 버릇이 의심되거나, 이게 AI 티인지 사람도 쓰는 말인지 헷갈리면 원본 룰북을 읽는다.**
 
 | 파일 | 무엇 | 언제 |
