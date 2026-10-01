@@ -98,7 +98,7 @@ LLM이 쓰는 한국어는 두 방향으로 어긋납니다.
 
 ## 출처
 
-번역투 임계값은 [sonmat의 humanize-korean](https://github.com/jun0-ds/sonmat)이 사람 글 코퍼스와 대조해 얻은 측정값에서 가져왔습니다.
+번역투 임계값은 [sonmat의 humanize-korean](https://github.com/jun0-ds/sonmat)에서 가져왔습니다. 사람이 쓴 글을 모아 놓고 대조해 측정한 값입니다.
 
 ## 라이선스
 
