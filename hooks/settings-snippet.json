@@ -1,0 +1,22 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"UserPromptSubmit\",\"additionalContext\":\"한국 사람이 실제로 말하는 것처럼 한국어로 답한다. 억지 우리말도 억지 음차도 아니고, 그 분야에서 실제로 쓰는 말을 쓴다. 번역투(~에 의해, 가지다, ~하는 것, ~들)를 걷어낸다. 요청이 없으면 존댓말. 결론을 맨 위에 쓰고 길게 늘이지 않는다. 직접 확인한 것과 추측을 문장에서 가른다. PR·이슈·문서를 쓸 때는 먼저 better-kor 스킬의 해당 절(pr·issue·docs)을 읽고 그대로 쓴다.\"},\"suppressOutput\":true}'"
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node '<여기에 홈 경로>/.claude/hooks/better-kor-pr-issue.js'"
+          }
+        ]
+      }
+    ]
+  }
+}
