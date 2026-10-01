@@ -1,0 +1,57 @@
+name: 버그 신고
+description: 동작이 기대와 다를 때
+labels: ["bug"]
+body:
+  - type: checkboxes
+    attributes:
+      label: 먼저 확인해 주세요
+      options:
+        - label: 이미 올라온 이슈가 있는지 검색했습니다
+          required: true
+
+  - type: textarea
+    attributes:
+      label: 재현 방법
+      description: 순서대로 적어 주세요. 다른 사람이 그대로 따라 할 수 있어야 합니다.
+      placeholder: |
+        1. ~를 실행한다
+        2. ~를 누른다
+        3. ~가 일어난다
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 기대한 동작과 실제 동작
+      description: 무엇이 일어나야 했고 실제로는 무엇이 일어났는지 적어 주세요.
+      placeholder: |
+        기대: ~가 나와야 합니다
+        실제: ~가 나옵니다
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 환경
+      description: OS, 버전, 실행 방식 등.
+      render: text
+      placeholder: |
+        OS:
+        버전:
+        실행 방식:
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 로그·스크린샷
+      description: 있으면 붙여 주세요. 없으면 비워 두셔도 됩니다.
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: 그 밖에
+      description: 언제부터 그랬는지, 특정 조건에서만 그런지 등.
+    validations:
+      required: false
